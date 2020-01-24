@@ -202,7 +202,7 @@ chmod 640 /etc/fusiondirectory/fusiondirectory.conf
 
 if [ ${FORCE_CONFIG:-"0"} -eq 1 ];then
 	echo "Forcing configuration"
-	#mv /etc/fusiondirectory/fusiondirectory.conf /etc/fusiondirectory/fusiondirectory.conf.orig
+	mv /etc/fusiondirectory/fusiondirectory.conf /etc/fusiondirectory/fusiondirectory.conf.orig
 fi
 
 echo "Starting $@"
